@@ -2,6 +2,8 @@ import React from 'react'
 import Papa from "papaparse";
 import { format_line } from './convert';
 import { useState } from 'react'; 
+import './AskCSV.css';
+import csvlogo from './csvlogo.svg';
 
 export default function AskCSV() {
     // State to store parsed data
@@ -47,62 +49,72 @@ export default function AskCSV() {
           };
     return (
         <div>
-            <h2>Place here your CSV</h2>
-            <input
-            type="file"
-            name="file"
-            accept=".csv"
-            onChange={changeHandler}
-            style={{ display: "block", margin: "10px auto" }}
-        />
-        <br />
-        <br />
-        {/* Table for initial data*/}
-        <h4>Original Data</h4>
-        <table>
-            <thead>
-            <tr>
-                {tableRows.map((rows, index) => {
-                return <th key={index}>{rows}</th>;
-                })}
-            </tr>
-            </thead>
-            <tbody>
-                {values.map((value, index) => {
-                    return (
-                    <tr key={index}>
-                        {value.map((val, i) => {
-                        return <td key={i}>{val}</td>;
-                        })}
-                    </tr>
-                    );
-                })}
-            </tbody>
-        </table>
-        <br />
-            
-        {/*Table for edited data*/}
-        <h4>Edited Data</h4>
-        <table>
-            <thead>
-            <tr>
-                {tableRows.map((rows, index) => {
-                return <th key={index}>{rows}</th>;
-                })}
-            </tr>
-            </thead>
-            <tbody>
-                {newValues.map((value, index) => {
-                    return (
-                    <tr key={index}>
-                        {value.map((val, i) => {
-                        return <td key={i}>{val}</td>;
-                        })}
-                    </tr>
-                    )
-                })}
-            </tbody>
-        </table>
+            <div className="header">
+                <h1 className="headerText"> CSV Converter</h1>
+                <img src={csvlogo} alt="CSV logo" className="imgCSV"/>
+            </div>
+
+            <div className="body">
+                <div className="selectContainer">
+                    <h2 className="selectContainerTitle">Place here your CSV</h2>
+                    <input
+                        type="file"
+                        name="file"
+                        accept=".csv"
+                        onChange={changeHandler}
+                        style={{ display: "block", margin: "10px auto" }}
+                    />  
+                </div>
+                
+            <br />
+            <br />
+            {/* Table for initial data*/}
+            <h4>Original Data</h4>
+            <table>
+                <thead>
+                <tr>
+                    {tableRows.map((rows, index) => {
+                    return <th key={index}>{rows}</th>;
+                    })}
+                </tr>
+                </thead>
+                <tbody>
+                    {values.map((value, index) => {
+                        return (
+                        <tr key={index}>
+                            {value.map((val, i) => {
+                            return <td key={i}>{val}</td>;
+                            })}
+                        </tr>
+                        );
+                    })}
+                </tbody>
+            </table>
+            <br />
+                
+            {/*Table for edited data*/}
+            <h4>Edited Data</h4>
+            <table>
+                <thead>
+                <tr>
+                    {tableRows.map((rows, index) => {
+                    return <th key={index}>{rows}</th>;
+                    })}
+                </tr>
+                </thead>
+                <tbody>
+                    {newValues.map((value, index) => {
+                        return (
+                        <tr key={index}>
+                            {value.map((val, i) => {
+                            return <td key={i}>{val}</td>;
+                            })}
+                        </tr>
+                        )
+                    })}
+                </tbody>
+            </table>
+        </div>
     </div>
   );
 }
