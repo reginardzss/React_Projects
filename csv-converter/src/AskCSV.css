@@ -22,7 +22,7 @@
 
 .selectContainer{
     display: flex;
-    height: 17.4vh;
+    height: 150px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
