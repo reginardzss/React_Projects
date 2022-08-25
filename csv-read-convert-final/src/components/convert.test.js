@@ -1,12 +1,20 @@
-import { render, screen, cleanup } from "@testing-library/react";
+/* Code that tests data conversions
+
+
+Ana Paula Katsuda - A01025303
+Regina Rodriguez - A01284329
+Salvador Federico Milanes - A01029956 */
+
+
 // Importing the jest testing library
 import '@testing-library/jest-dom'
 import {changeGrade, changeDate, noSurname, format_line} from './convert'
 
-
+// Many unit tests for functions
 describe('Individual functions', () => {
-
+    // Test grade conversion
     test('grade conversion', () => {
+      expect(changeGrade(98)).toBe('A+');
       expect(changeGrade(95)).toBe('A');
       expect(changeGrade(91)).toBe('A-');
       expect(changeGrade(89)).toBe('B+');
@@ -19,13 +27,13 @@ describe('Individual functions', () => {
       expect(changeGrade(66)).toBe('D');
 
     });
-  
+    // Test date conversion
     test('date conversion', () => {
       expect(changeDate('24/06/2021')).toBe('06/24/2021');
       expect(changeDate('18/12/2021')).toBe('12/18/2021');
       expect(changeDate('23/06/2021')).toBe('06/23/2021');
     });
-  
+    // Test remove surname
     test('remove surname', () => {
       expect(noSurname('Regina Rodriguez Sanchez')).toBe('Regina Rodriguez');
       expect(noSurname('Gilberto Echeverria Furio')).toBe('Gilberto Echeverria');
@@ -34,6 +42,7 @@ describe('Individual functions', () => {
   
   });
   
+  // Test format line
   describe('Complete line', () => {
     test('convert line', () => {
       let line = [];
@@ -47,7 +56,5 @@ describe('Individual functions', () => {
       line = ['12', 'Salvador Milanes Braniff', 'A01029956', '07/03/2021', '75'];
       result = ['12', 'Salvador Milanes', 'A01029956@tec.mx', '03/07/2021', 'C'];
       expect(format_line(line)).toStrictEqual(result);
-  
     });
-  
   });
