@@ -21,6 +21,28 @@ El software se prueba mediante los valores de entrada y se analizan los valores 
 
 ## Caso de Prueba
 Para fines del presente escrito, se decidió utilizar Jest para realizar pruebas a una aplicación que lee, convierte y muestra datos de un ‘csv’ en forma de tabla. Se hicieron pruebas unitarias de cada uno de los componentes que conforman la aplicación como se muestra a continuación:
+ ### Archivos de prueba
+
+ #### AskCSV.test.js
+![código AskCSV](Images/askCSV.png)
+
+#### BuildTable.test.js
+![código BuildTable1](Images/BuildTable1.png)
+![código BuildTable2](Images/BuildTable2.png)
+
+
+#### convert.test.js
+![código convert1](Images/convert1.png)
+![código convert2](Images/convert2.png)
+![código convert3](Images/convert3.png)
+
+#### DisplayResults.test.js
+![código displayResults1](Images/displayResult1.png)
+![código displayResults2](Images/displayResult2.png)
+![código displayResults3](Images/displayResult3.png)
+
+#### Tests passed
+![terminal test](Images/testPassed.png)
 
 ## Convertidor CSV
 La aplicación acepta un archivo CSV con datos de estudiantes, los muestra en una tabla, y convierte algunos de los valores. 
