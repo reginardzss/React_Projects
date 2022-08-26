@@ -22,23 +22,21 @@ El software se prueba mediante los valores de entrada y se analizan los valores 
 Para fines del presente escrito, se decidió utilizar Jest para realizar pruebas a una aplicación que lee, convierte y muestra datos de un ‘csv’ en forma de tabla. Se hicieron pruebas unitarias de cada uno de los componentes que conforman la aplicación como se muestra a continuación:
 
 ## Fuentes
-Everett, G., McLeod, R. (2007). Software testing. Recuperado el 23 de agosto, de http://worldcolleges.info/sites/default/files/software-testing-testing-across-the-entire-software-development-life-cycle.9780471793717.28214.pdf
-Getting Started · Jest. (2022).  Recuperado el 24 de agosto, de https://jestjs.io/docs/getting-started
-GitHub - google/EarlGrey: iOS UI Automation Test Framework. (2022). Recuperado el 24 de agosto, de https://github.com/google/EarlGrey
-Herramientas de Desarrollo de Software | Software de Desarrollo. (2022). Recuperado el 25 de Agosto, de https://okhosting.com/blog/herramientas-de-desarrollo-de-software/
-Introduction | WebdriverIO. (2022). Recuperado el 24 de agosto, de: https://webdriver.io/docs/api/  
-Munot, K. (2019). Unit-testing important role in software development. Recuperado el 25 de agosto, de https://medium.com/nonstopio/unit-testing-important-role-in-software-development-1
+- Everett, G., McLeod, R. (2007). Software testing. Recuperado el 23 de agosto, de http://worldcolleges.info/sites/default/files/software-testing-testing-across-the-entire-software-development-life-cycle.9780471793717.28214.pdf
+- Getting Started · Jest. (2022).  Recuperado el 24 de agosto, de https://jestjs.io/docs/getting-started
+- GitHub - google/EarlGrey: iOS UI Automation Test Framework. (2022). Recuperado el 24 de agosto, de https://github.com/google/EarlGrey
+- Herramientas de Desarrollo de Software | Software de Desarrollo. (2022). Recuperado el 25 de Agosto, de https://okhosting.com/blog/herramientas-de-desarrollo-de-software/
+- Introduction | WebdriverIO. (2022). Recuperado el 24 de agosto, de: https://webdriver.io/docs/api/  
+- Munot, K. (2019). Unit-testing important role in software development. Recuperado el 25 de agosto, de https://medium.com/nonstopio/unit-testing-important-role-in-software-development-1
 f52f7c810f8
-Prueba alfa. (2022). Recuperado el 24 de Agosto, de https://isolution.pro/es/t/software-testing-dictionary/alpha-testing/prueba-alfa
-¿Qué es la prueba de software y Cómo Funciona? IBM. (s.f.). Recuperado el 23 de agosto de  https://www.ibm.com/mx-es/topics/software-testing
-Ramirez. C (2022). ¿Qué es el Análisis del Valor Límite (BVA) de la Técnica de Pruebas de Caja Negra? | . Recuperado el 25 de Agosto, de https://ca-ra.org/es/an%C3%A1lisis-del-valor-l%C3%ADmite-una-t%C3%A9cnica-de-pruebas-de-caja-negra/
-Robot Framework documentation. (2022). Recuperado el 24 de Agosto, de https://robotframework.org/robotframework/
-The Selenium Browser Automation Project. (2022). Recuperado el 24 de agosto, de https://www.selenium.dev/documentation/
-Singh, K. (2022). Pruebas de regresión: todo lo que necesita saber. Recuperado el 24 de agosto, de https://geekflare.com/es/regression-testing-tools/
-Turrado, J. (2020). Qué son las pruebas de software - campusMVP.es. Recuperado el 23 de agosto, de: https://www.campusmvp.es/recursos/post/que-son-las-pruebas-de-software.aspx
-Why Cypress? | Cypress Documentation. (2022). Recuperado del 23 de agosto, de https://docs.cypress.io/guides/overview/why-cypress
-
-
+- Prueba alfa. (2022). Recuperado el 24 de Agosto, de https://isolution.pro/es/t/software-testing-dictionary/alpha-testing/prueba-alfa
+- ¿Qué es la prueba de software y Cómo Funciona? IBM. (s.f.). Recuperado el 23 de agosto de  https://www.ibm.com/mx-es/topics/software-testing
+- Ramirez. C (2022). ¿Qué es el Análisis del Valor Límite (BVA) de la Técnica de Pruebas de Caja Negra? | . Recuperado el 25 de Agosto, de https://ca-ra.org/es/an%C3%A1lisis-del-valor-l%C3%ADmite-una-t%C3%A9cnica-de-pruebas-de-caja-negra/
+- Robot Framework documentation. (2022). Recuperado el 24 de Agosto, de https://robotframework.org/robotframework/
+- The Selenium Browser Automation Project. (2022). Recuperado el 24 de agosto, de https://www.selenium.dev/documentation/
+- Singh, K. (2022). Pruebas de regresión: todo lo que necesita saber. Recuperado el 24 de agosto, de https://geekflare.com/es/regression-testing-tools/
+- Turrado, J. (2020). Qué son las pruebas de software - campusMVP.es. Recuperado el 23 de agosto, de: https://www.campusmvp.es/recursos/post/que-son-las-pruebas-de-software.aspx
+- Why Cypress? | Cypress Documentation. (2022). Recuperado del 23 de agosto, de https://docs.cypress.io/guides/overview/why-cypress
 
 ## Convertidor CSV
 La aplicación acepta un archivo CSV con datos de estudiantes, los muestra en una tabla, y convierte algunos de los valores. 
