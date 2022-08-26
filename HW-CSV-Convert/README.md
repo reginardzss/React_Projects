@@ -21,6 +21,17 @@ El software se prueba mediante los valores de entrada y se analizan los valores 
 ## Caso de Prueba
 Para fines del presente escrito, se decidió utilizar Jest para realizar pruebas a una aplicación que lee, convierte y muestra datos de un ‘csv’ en forma de tabla. Se hicieron pruebas unitarias de cada uno de los componentes que conforman la aplicación como se muestra a continuación:
 
+## Convertidor CSV
+La aplicación acepta un archivo CSV con datos de estudiantes, los muestra en una tabla, y convierte algunos de los valores. 
+
+Es posible correr dicha aplicación accediendo a la carpeta 'csv-read-convert-final' y corriendo la siguiente línea:  
+  > npm start
+
+Para correr las pruebas de los distintos componentes: 
+  > npm test
+
+Un posible 'input' para el csv dentro de la aplicación puede ser encontrado en este folder bajo el nombre 'students_mex.csv'.
+
 ## Fuentes
 - Everett, G., McLeod, R. (2007). Software testing. Recuperado el 23 de agosto, de http://worldcolleges.info/sites/default/files/software-testing-testing-across-the-entire-software-development-life-cycle.9780471793717.28214.pdf
 - Getting Started · Jest. (2022).  Recuperado el 24 de agosto, de https://jestjs.io/docs/getting-started
@@ -37,14 +48,3 @@ f52f7c810f8
 - Singh, K. (2022). Pruebas de regresión: todo lo que necesita saber. Recuperado el 24 de agosto, de https://geekflare.com/es/regression-testing-tools/
 - Turrado, J. (2020). Qué son las pruebas de software - campusMVP.es. Recuperado el 23 de agosto, de: https://www.campusmvp.es/recursos/post/que-son-las-pruebas-de-software.aspx
 - Why Cypress? | Cypress Documentation. (2022). Recuperado del 23 de agosto, de https://docs.cypress.io/guides/overview/why-cypress
-
-## Convertidor CSV
-La aplicación acepta un archivo CSV con datos de estudiantes, los muestra en una tabla, y convierte algunos de los valores. 
-
-Es posible correr dicha aplicación accediendo a la carpeta 'csv-read-convert-final' y corriendo la siguiente línea:  
-  > npm start
-
-Para correr las pruebas de los distintos componentes: 
-  > npm test
-
-Un posible 'input' para el csv dentro de la aplicación puede ser encontrado en este folder bajo el nombre 'students_mex.csv'.
