@@ -17,7 +17,7 @@ El software se prueba mediante los valores de entrada y se analizan los valores 
 - Pruebas bajo condiciones frontera: Consisten en probar un componente cuya estructura está basada en condiciones de un tipo de dato particular, un rango determinado, una extensión en dígitos o caracteres, etcétera; Validando que el software filtre adecuadamente los datos válidos como parte del funcionamiento (es decir, sin obstruirse), y/o que tenga un comportamiento determinado en caso de recibir un dato que no cumple con las condiciones definidas.  (Ramirez. C, 2022)
 
 ## Herramientas de Pruebas de Software
-![Tabla comparativa de herramientas de pruebas de software](Images/Herramientas de pruebas de software.png)
+![Tabla comparativa de herramientas de pruebas de software](Images/Herramientas%20de%20pruebas%20de%20software.png)
 
 ## Caso de Prueba
 Para fines del presente escrito, se decidió utilizar Jest para realizar pruebas a una aplicación que lee, convierte y muestra datos de un ‘csv’ en forma de tabla. Se hicieron pruebas unitarias de cada uno de los componentes que conforman la aplicación como se muestra a continuación:
